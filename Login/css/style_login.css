@@ -1,0 +1,213 @@
+/*-- Reset --*/
+*{
+box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+  background:url(../img/bg_5.png) no-repeat center center fixed;
+  scroll-behavior: smooth;
+  background-size: cover;
+  color: #fff;
+  
+  font-family: poppins;
+}
+.box{
+  box-shadow: 0 2rem 1.2rem rgba(0, 0, 0, 0.8);
+  border-radius: 4rem 0;
+  margin: 4rem;
+  background-color:transparent;
+  border: .2rem solid goldenrod;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+ 
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+  
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  
+ label{
+  font-size: medium;
+ }
+ input{
+  font-size: medium;
+ }
+ .btn{
+  font-size: medium;
+ }
+ 
+}
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+  label{
+    font-size: medium;
+    
+   }
+   input{
+    font-size: small;
+    
+   }
+ 
+   .btn{
+    font-size: medium;
+   }
+   #fas{
+    position: absolute;
+    margin-right: 1px;
+    transform: translateY(-50%);
+    width: 20px;
+    top: 45%;
+    
+  }
+
+}
+/* Devices under 360px (sm) */
+@media (max-width: 359.98px) {
+  label{
+    font-size: medium;
+   }
+   input{
+    font-size: x-small;
+   }
+ 
+   .btn{
+    font-size: small;
+   }
+   #fas{
+    position: absolute;
+    margin-right: 1px;
+    transform: translateY(-50%);
+    width: 15px;
+    top: 30%;
+    
+  }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:*/
+
+/*Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap*/
+
+/*Small (sm) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+ 
+}
+
+/*Medium (md) devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/*Large (lg) devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*Extra (xl) large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/*=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+
+
+/*-- Fixed Background Image --*/
+
+
+
+/*============dropdownlist================*/
+
+/*==============buttons=============*/
+.btn{
+  border-radius: 3rem;
+  color: gold;
+  border-width: .2rem;
+border-color: goldenrod;
+  }
+.btnlogin{
+   text-align: center;
+    }
+.btn:hover{
+cursor: pointer;
+background-color:#552594;
+border-radius: 3rem;
+border-width: .2rem;
+border-color: goldenrod;
+color: gold;
+}
+h3{
+  text-align: center;
+  color: goldenrod;
+}
+
+#fas{
+  color: goldenrod;
+  text-align: center;
+  position:relative;
+  margin-top: 5px;
+  padding: 1px;
+  font-size: 30px;
+
+}
+.gotopbtn{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: goldenrod;
+  bottom: 20px;
+  right: 10px;
+  border-radius:50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 22px;
+}
+
+.input-group{
+  position: relative;
+
+}
+.input-group input::placeholder{
+  color: white;
+ position: relative;
+ background: transparent;
+
+}
+
+#toggle{
+position: absolute;
+top: 50%;
+right: 8%;
+transform: translateY(-50%);
+width: 25px;
+height: 25px;
+background: url(../img/icons8_eye_24px.png) ;
+cursor: pointer;
+background-size:cover;
+
+}
+#toggle.hide{
+  background: url(../img/icons8_hide_24px.png) ;
+  background-size:cover;
+}
+.form-control-input{
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  border: none ;
+  outline: none;
+  border-top: .2rem solid goldenrod;
+  border-bottom: .2rem solid goldenrod;
+  border-left: .2rem solid goldenrod;
+  border-right: .2rem solid goldenrod;
+  width: 87%;
+  border-radius: 3rem;
+  position: relative;
+}
+
+
+

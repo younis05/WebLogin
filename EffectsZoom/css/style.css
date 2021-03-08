@@ -1,0 +1,196 @@
+html, body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+
+  .container{
+      height: auto!important;
+  }
+  .row{
+    width: 100%;
+    position: relative;
+  }
+  div {
+    display: block;
+}
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+p.lead{
+  font-size: 1.2rem;
+}
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+ body{
+   font-size: medium;
+ }
+ p.lead{
+  font-size: 1.1rem;
+}
+.navbar-brand img{
+  height: 2.3rem;
+}
+.navbar-toggler{
+  transform: scale(.9);
+}
+.navbar{
+  font-size: 1rem;
+  padding: .3rem .6rem;
+}
+}
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:*/
+
+/*Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap*/
+
+/*Small (sm) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/*Medium (md) devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/*Large (lg) devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*Extra (xl) large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/*=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+img{
+    width: 150px;
+    height: 100px;
+}
+.img-hover-zoom--quick-zoom img {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+  }
+   /* The Transformation */
+   .img-hover-zoom--quick-zoom:hover img {
+    transform: scale(1.2);
+  }
+
+    /* Point-zoom Container */
+.img-hover-zoom--point-zoom img {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--point-zoom:hover img {
+    transform: scale(1.5);
+  }
+    /* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+    transition: transform .5s ease-in-out;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--zoom-n-rotate:hover img {
+    transform: scale(1.5) rotate(25deg);
+  }
+    /* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(150%);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--slowmo:hover img {
+    filter: brightness(100%);
+    transform: scale(1.5);
+  }
+   /* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+  }
+
+  /* Horizontal Zoom-n-pan Container */
+.img-hover-zoom--zoom-n-pan-h img {
+    transition: transform .5s ease-in-out;
+    transform: scale(1.4);
+    transform-origin: 100% 0;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--zoom-n-pan-h:hover img {
+    transform: scale(1.5) translateX(30%);
+  }
+
+  /* Vertical Zoom-n-pan Container */
+.img-hover-zoom--zoom-n-pan-v img {
+    transition: transform .5s ease-in-out;
+    transform: scale(1.4);
+    transform-origin: 0 0;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--zoom-n-pan-v:hover img {
+    transform: scale(1.25) translateY(-30%);
+  }
+
+  /* Blur-zoom Container */
+.img-hover-zoom--blur img {
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1.2);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--blur:hover img {
+    filter: blur(0);
+    transform: scale(1);
+  }
+
+  /* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--colorize:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+  .zoomImage{
+   width: 200px;
+   height: 160px;
+   overflow: hidden;
+   text-align: center;
+  }
+  .zoomImage:hover{
+   transform: scale(1.2);
+  }
+  #imgh{
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.75s;
+  }

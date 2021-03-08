@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+	<title>home</title>
+	<link rel="shortcut icon" href="img/ichemoulEduc.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style_login.css">
+	<!--AOS-->
+	<link rel="stylesheet" href="css/aos.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!--   -->
+<div class="container lg-12">
+	<div  class="row justify-content-center">
+		
+		  <div  
+		  data-aos-offset="200"
+		  data-aos-delay="50"
+		  data-aos-anchor-placement="center"
+		  data-aos="fade-down" 
+		  
+		  class="box col-sm-8 col-md-8 col-lg-8 py-2 ">
+		          <div class="col-lg-12 py-2" >
+				       <h3>Sign Up</h3>
+				  </div>
+				  <form action="#"  id="form">
+					<div class="col-lg-2">
+						<label class="">FirstName:</label>
+				   </div>
+				   <div class="col-lg-10 py-1">
+					 <div class="input-group">
+						 <span class="input-group-addon"><i id="fas" class="fas fa-user fa-fw"></i></span>
+						 <input type="text" placeholder="enter your FirstName" class="form-control-input">
+					 </div>
+				   </div>
+				   <div class="col-lg-2">
+					<label class="">LastName:</label>
+			   </div>
+			   <div class="col-lg-10 py-1">
+				 <div class="input-group">
+					 <span class="input-group-addon"><i id="fas" class="fas fa-user fa-fw"></i></span>
+					 <input type="text" placeholder="enter your LastName" class="form-control-input">
+				 </div>
+			   </div> 
+			   <div class="col-lg-2">
+				<label class="">Phone:</label>
+		   </div>
+		   <div class="col-lg-10 py-1">
+			 <div class="input-group">
+				 <span class="input-group-addon"><i id="fas" class="fas fa-phone fa-fw"></i></span>
+				 <input type="text" placeholder="enter your Phone" class="form-control-input">
+			 </div>
+		   </div>
+		   <div class="col-lg-2">
+			<label class="">Address:</label>
+	   </div>
+	   <div class="col-lg-10 py-1">
+		 <div class="input-group">
+			 <span class="input-group-addon"><i id="fas" class="fas fa-map-marker-alt fa-fw"></i></span>
+			 <input type="text" placeholder="enter your Address" class="form-control-input">
+		 </div>
+	   </div>
+			      <div class="col-lg-2">
+					   <label class="">Email:</label>
+				  </div>
+				  <div class="col-lg-10 py-1">
+					<div class="input-group">
+						<span class="input-group-addon"><i id="fas" class="fas fa-at fa-fw"></i></span>
+						<input type="email" placeholder="enter your email" class="form-control-input">
+					</div>
+				  </div>
+				  <div class="col-lg-2 py-1">
+					<label class="">Password:</label>
+				  </div>
+				  <div class="col-lg-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i id="fas" class="fas fa-lock fa-fw"></i></span>
+						<input type="password" placeholder="enter your password" class="form-control-input" id="password" onkeydown="clear()">
+				    </div>
+				  </div>
+				  <div class="col-lg-4 py-1">
+					<label class="">Repeat Password:</label>
+				  </div>
+				  <div class="col-lg-10">
+					<div class="input-group">
+						<span class="input-group-addon"><i id="fas" class="fas fa-lock fa-fw"></i></span>
+						<input type="password" placeholder="enter your password" class="form-control-input" id="password2">
+				    </div>
+				  </div>
+				  <div class="col-lg-10">
+					  <span id="text"></span>
+				  </div>
+				  <div class="btnlogin py-5">
+					<input type="submit" class="btn btn-outline-dark btn-md" value="SIGN IN" id="login" onclick="validation()">
+				  </div>
+				</form>
+		  </div>
+		 
+	</div>
+</div>
+
+<a class="gotopbtn" id="topBtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+
+<!--two column section-->
+<script type="text/javascript">$(document).ready(function(){
+
+	$(window).scroll(function(){
+	  if($(this).scrollTop() > 40){
+		$('#topBtn').fadeIn();
+	  } else{
+		$('#topBtn').fadeOut();
+	  }
+	});
+
+	$("#topBtn").click(function(){
+	  $('html ,body').animate({scrollTop : 0},500);
+	});
+  });</script>
+   <!-- jQuery -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/confirmpassword.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+	<!--scroll effects-->
+	<script src="js/script.js"></script>
+	<!--AOS-->
+	<script src="js/aos.js"></script>
+	<script>
+		AOS.init({
+			duration:3000,
+			
+		});
+    </script>
+</body>
+</html>
